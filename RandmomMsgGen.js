@@ -6,10 +6,14 @@ var first = ["Autumn coloured leaves",
 "The Summer shaddows",
 "Blossom falls in Spring",
 "The winters shiver"]
-var second = ["but work is so dull, please, please,", 
-"This makes me think about life's worth,", 
+
+
+var second = ["but work is so dull, so please,", 
+"The passing years lumber on,", 
 "existential thoughts come forth,", 
 "yet I'm stuck in the office"]
+
+
 var third = ["I just want ice cream!",
 "bring on holidays",
 "Can't wait till Butlins",
@@ -20,13 +24,11 @@ var third = ["I just want ice cream!",
 "Rhubarb and Custard."]
 
 const haikuGenerator = () => {
-    x = Math.floor(Math.random());
-    y = Math.floor(Math.random());
-    z = Math.floor(Math.random());
-    console.log(first[Math.floor(Math.random() * x)]);
-    console.log(second[Math.floor(Math.random() * y)]);
-    console.log(third[Math.floor(Math.random() * z)]);
+    console.log(first[Math.floor(Math.random() * 8)]);
+    console.log(second[Math.floor(Math.random() * 4)]);
+    console.log(third[Math.floor(Math.random() * 8)]);
 }
 
 haikuGenerator();
+
 
